@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/TheReeds/DesarrolloAppU1.git # ruta del repositorio git
+          uri: https://github.com/pachauri2002/practica.git # ruta del repositorio git
           searchPaths: config-data
           default-label: main
           #username:
