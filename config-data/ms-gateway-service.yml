@@ -1,0 +1,25 @@
+server:
+  port: 8086
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka
+  instance:
+    hostname: localhost
+
+
+spring:
+  cloud:
+
+
+    gateway:
+      discovery:
+        locator:
+          enable: true
+      routes:
+        - id: ms-alumno-service
+          uri: lb://ms-alumno-service
+          predicates:
+            - Path=/profesores/**
