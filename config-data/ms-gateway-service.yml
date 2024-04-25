@@ -22,4 +22,19 @@ spring:
         - id: ms-alumno-service
           uri: lb://ms-alumno-service
           predicates:
+            - Path=/alumno/**
+        - id: ms-profesores-service
+          uri: lb://ms-profesores-service
+          predicates:
             - Path=/profesores/**
+        - id: ms-curso-service
+          uri: lb://ms-curso-service
+          predicates:
+            - Path=/curso/**
+
+              
+
+
+
+
+
