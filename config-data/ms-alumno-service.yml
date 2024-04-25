@@ -13,7 +13,7 @@ spring:
     show-sql: true
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/ms_alumno
+    url: jdbc:mysql://localhost:3306/alumno2
     username: root
     password:
 
